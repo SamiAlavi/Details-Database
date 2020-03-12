@@ -35,7 +35,7 @@ Car=['','','','','','']
 Notee=['']
 length=0
 n=-2
-sound=SoundLoader.load('blacknoise.mp3')
+sound=SoundLoader.load('audio/blacknoise.mp3')
 sound.play()
 popup=''
 
@@ -76,7 +76,7 @@ class Main(Screen):
         if popup!='':
             popup.dismiss()
         sound.stop()
-        sound=SoundLoader.load('animation.mp3')
+        sound=SoundLoader.load('audio/animation.mp3')
         sound.play()
         
 
@@ -184,7 +184,7 @@ class Database(Screen):
         n+=1
         if -1<n<31:
             sound.stop()
-            sound = SoundLoader.load('Trap Nation 2018 Best Trap_%s.mp3'%n)
+            sound = SoundLoader.load('audio/Trap Nation 2018 Best Trap_%s.mp3'%n)
             if sound:                
                 #print(n)
                 sound.play()
@@ -204,7 +204,7 @@ class Database(Screen):
         elif n==-1 or n==31:
             n=-1
             sound.stop()
-            sound = SoundLoader.load('Pokémon - Theme.mp3')
+            sound = SoundLoader.load('audio/Pokémon - Theme.mp3')
             if sound:   
                 sound.play()
                 popup = Popup(title='Music Player',title_align='center',title_color=[1,1,1,1],title_size=30,
@@ -223,7 +223,7 @@ class Database(Screen):
             n=30
         if -1<n<31:
             sound.stop()
-            sound = SoundLoader.load('Trap Nation 2018 Best Trap_%s.mp3'%n)
+            sound = SoundLoader.load('audio/Trap Nation 2018 Best Trap_%s.mp3'%n)
             if sound:
                 sound.play()
                 if 0<n<30:
@@ -242,7 +242,7 @@ class Database(Screen):
         elif n==-1 or n==31:
             n=-1
             sound.stop()
-            sound = SoundLoader.load('Pokémon - Theme.mp3')
+            sound = SoundLoader.load('audio/Pokémon - Theme.mp3')
             if sound:                
                 sound.play()
                 popup = Popup(title='Music Player',title_align='center',title_color=[1,1,1,1],title_size=30,
